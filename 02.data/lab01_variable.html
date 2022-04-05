@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab01_variable.html</title>
+</head>
+<body>
+    <script>
+        var x = 10;//선언
+        x = 10;//할당
+        console.log(x);
+        
+        var x = 10, y = 11;
+        console.log(x + y);
+        var z = x + y;
+        console.log(z);
+    </script>
+
+    <script>
+        // let
+        //var 중복 선언,할당,초기화 OK
+        var a = 10;
+        console.log(a);
+        var a = 20;
+        console.log(a);
+        //OK
+        let b = 30;
+        console.log(b);
+        b = 40;
+        console.log(b);
+
+        // //OK
+        // var a = 10;
+        // console.log(a);
+        // var a = 20;
+        // console.log(a);
+        // //error 중복 변수 안됨.
+        // let b = 30;
+        // console.log(b);
+        // let b = 40;
+        // console.log(b);
+
+        // //const
+        // const c = 50;
+        // console.log(c);
+        // //선언 중복 error
+        // const c; 
+        // //할당 중복 error
+        // c = 60;
+    </script>
+</body>
+</html>

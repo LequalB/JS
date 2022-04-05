@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>220330_이은비.html</title>
+</head>
+<body>
+    <div id="body">body</div>
+    <script>
+        document.write('basic');
+        document.write('<br>');
+        
+        document.getElementById('body').innerHTML = 'Hello, body';
+    </script>
+     <!-- HTML 외부 -->
+    <script src="/basic/lab02.js"></script>
+    
+    <script>
+        document.write('data');
+        document.write('<br>');
+        
+        document.write('변수 var,let,const');
+        document.write('<br>');
+        document.write('js의 default는 let');
+         //OK
+        var x = 10;
+        console.log(a);
+        var x = 20;
+        console.log(a);
+        //error 중복 변수 안됨.
+        // let y = 30;
+        // console.log(b);
+        // let y = 40;
+        // console.log(b);
+
+        //const
+        const c = 50;
+        console.log(c);
+        // //선언 중복 error
+        // const c; 
+        // //할당 중복 error
+        // c = 60;
+        document.write('연산자는 기존에 배웠던 c언어와 흡사 ');
+        document.write('<br>');
+        // 타입 변환
+        // 암묵적 타입 변환 vs 명시적 타입 변환
+        // 숫자
+        document.write('typeof로 type확인 ');
+        document.write('<br>');
+        console.log(1+'2');
+        console.log(1+'');
+        console.log(typeof(1+''));//string
+        console.log(typeof(NaN+''));//string
+         
+        문자열
+        console.log(typeof(+''));//number
+        console.log(typeof(+'1'));//number
+        console.log(typeof(+'NaN'));//number
+        
+        불리언
+        console.log(+true);//1
+        console.log(+null);//0
+
+    </script>
+    <script>
+        document.write('control');
+        document.write('<br>');
+        document.write('case-swithch');
+        document.write('<br>');
+        let stuff = 4;
+        switch(grade) {
+            case 1:
+                console.log('1등 입니다.');
+                break;
+            case 2:
+                console.log('2등 입니다.');
+                break;
+
+            case 3:
+                console.log('3등 입니다.');
+                break;
+            default:
+                console.log('메달권이 아닙니다.');
+                break;
+        }
+        </script>
+        <script>
+        ocument.write('조건문과 반복문 혼합');
+        document.write('<br>');
+          //구구단:1단~9단
+          for(let i=1;i<10;i++){
+            
+            for(let j=1;j<10;j++)
+            {
+                document.write(i+'x'+j+'='+(i*j));
+                document.write('<br>')
+            }
+            document.write((i+1)+'단');
+            document.write('<br>')
+        }
+    </script>
+    
+    <script>
+        document.write('conclusion');
+        document.write('<br>');
+        
+    </script>
+</body>
+</html>

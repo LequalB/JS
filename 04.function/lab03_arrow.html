@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab03_arrow.html</title>
+
+</head>
+<body>
+    <script>
+        // let arrow = function(){
+        //     console.log('arrow function');
+        // }
+        //익명함수 arrow를 이용함.
+        arrow = () => { 
+            console.log('arrow function');
+                        }
+        arrow();
+        //직접해보기 : sum, minus 에 대한 연산 결과를 반환하는 화살표 만들기.
+        
+        sum = (a,b) =>{return (a+b)}
+        console.log(sum(2,3));
+        minus = (a,b) =>{return (a-b);}
+        console.log(sum(2,3));
+    
+        //즉시 실행 함수(IIFE: immediately invoked function )
+        //구조 확인!
+        // (function innediatelyFunc(){
+        //     alert('welcome');
+        // }());
+
+        //익명함수도 OK
+        // (function (){
+        //     alert('welcome');
+        // }());
+        
+        // //결과가 undefined.
+        // let data = 'welcome';
+        // (function innediatelyFunc2(data){
+        //     alert(data);
+        // }());
+        
+        // //welcoem으로 정상출력
+        let data = 'welcome';
+        // (function innediatelyFunc2(data){
+        //     alert(data);
+        // }(data));
+
+        // //welcoem으로 정상출력
+        // (function innediatelyFunc2(data){
+        //     alert(data);
+        // })(data);
+        
+
+    </script>
+</body>
+</html>

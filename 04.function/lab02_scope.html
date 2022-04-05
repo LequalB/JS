@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab02_scope.html</title>
+</head>
+<body>
+    <script>
+        //실행 컨텍스트를 위한 과정
+        //변수,함수, 클래스...스코프
+
+        // //과정
+        // 1.선언
+        // 2.초기화(메모리에 등록)
+        // 3.할당
+        
+        // // var vs let
+        // var : undefined
+        
+        // scope : 전역변수, 지역변수
+        let color1 = 'black';
+        function getColor(){
+            let color1 = 'yellow';
+            console.log(color1);
+        }
+        // console.log(color1);
+        // getColor();
+
+        // var vs let
+        //hoisting(감아 올리기) : "선언에 대한 부분만 hoisting"
+        var test = 'test';
+        console.log(test);//OK
+
+        //var test o 
+        console.log(test);
+        var test = 'test';//undefinded 
+        
+        var test;
+        console.log(test);//undefinded
+        //이런 var의 hoisting현상 때문에 충돌현상 일어날 수 있음. 
+
+        // //let test2 x
+        // console.log(test2)
+        // let test2 = 'test2';//error
+
+      
+    </script>
+</body>
+</html>

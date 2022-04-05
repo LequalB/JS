@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab02_type.html</title>
+</head>
+<body>
+    <!--원시타입-->
+    <script>
+        // Number : 숫자
+        console.log(-1);
+        console.log(3.2);
+        console.log(10/3);
+        console.log('Three/3'); // NaN(undefined)
+        console. log(1/0);// Infinity
+    </script>
+    <script>
+        // String : 문자열
+        console.log("String");//''와""차이 x
+        console.log("Lee's labtop");//but
+        console.log('Lee"s labtop');
+        // consol.log('Lee's labtop');//error
+        console.log('Lee\'s labtop');//escape 이용->OK
+        //error
+        // console.log('오늘은 
+        // 수요일입니다.');
+        //``(1 옆에 있는 기호 사용)
+        console.log(`오늘은 
+        수요일입니다.`);
+    </script>
+
+    <script>
+        //Boolean
+        //참(true),거짓(false)
+        // console.log(true);
+        // console.log(false);
+    </script>
+
+    <script>
+        //undefined & null
+
+        //undefined : 값이 할당되지 않은 상태
+        let x;
+        console.log(x + 10); // NaN: not a Number
+
+        //null : 어떤 자료형에도 속하지 않음
+        console.log(null);
+    </script>
+
+    <script>
+        //타입 변환
+        //암묵적 타입 변환 vs 명시적 타입 변환
+        // 숫자
+        // console.log(1+'2');
+        // console.log(1+'');
+        // console.log(typeof(1+''));//string
+        // console.log(typeof(NaN+''));//string
+         
+        //문자열
+        // console.log(typeof(+''));//number
+        // console.log(typeof(+'1'));//number
+        // console.log(typeof(+'NaN'));//number
+        
+        //불리언
+        // console.log(+true);//1
+        // console.log(+null);//0
+    </script>
+
+</body>
+</html>
