@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab03_string.html</title>
+</head>
+<body>
+    <script>
+        // String
+        let str1 = 'abcdefg';
+       let object = new String('1');
+       console.log(object);//object
+        
+        // 문자열 조회
+        // charAt : 해당 인덱스의 문자열을 반환
+        console.log(str1.charAt(2));
+        console.log(str1.indexOf(2));//2가 존재 안하므로 -1 출력
+        console.log(str1[0]);
+        console.log(str1[str1.length-1]);
+
+        // substring
+        console.log(str1.substring(3,5));//3이상 5미만
+        // replace
+        console.log(str1.replace('bcd','BCD'));//바껴질 것(존재 해야함), 바꿔지는 것
+
+        // split
+        let str2 = 'HTML,CSS,JS,PYTHON,JAVA,SQL,HADOOP';
+        // console.log(str2.split(','));//array형태로 변환
+        // console.log(str2.split(',')[4]);//str2[4]에 해당하는 JAVA 출력
+        // console.log(str2.split(''));
+        // console.log(str2.split(' '));
+
+        //concat
+        let str3 = '노는게';
+        let str4 = '제일좋아';
+        console.log(str3.concat(str4));
+        console.log(str3 + str4);
+        
+        //명시적 형변환
+        console.log(typeof(String('1')));
+        console.log(String(1));
+        console.log(String(true));
+        console.log(String(NaN));
+        console.log((1).toString());
+        console.log(typeof((1).toString()));
+      
+
+
+
+    </script>   
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab05_date.html</title>
+</head>
+<body>
+    <script>
+        let dateObj = new Date();
+        console.log(dateObj);
+
+        console.log('년도'+dateObj.getFullYear());
+        console.log('월'+dateObj.getMonth());//+1
+        console.log('요일'+dateObj.getDay());//+1 요일의 의미(0=sun,5=fri)
+        console.log('날일'+dateObj.getDate());//실제 월의 몇일
+        console.log('시'+dateObj.getHours());
+        console.log('분'+dateObj.getMinutes());
+
+        console.log(Math.random());//계속바뀜
+    </script>
+</body>
+</html>

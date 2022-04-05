@@ -1,0 +1,53 @@
+/* sol2.import이용<fonts> */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300&display=swap');
+/* sol1.link <fonts>*/
+/* h2에 해당 코드 적용 */
+/* h2{
+    font-family: 'Roboto', sans-serif;
+} */
+/* reset,css : 기본 css 스타일 초기화 */
+html,body{
+    margin: 0;
+    font-family: 'Roboto','Open Sans';
+    background-color: rgb(red, green, blue);
+    
+}
+/* style.css */
+/* tag는 .안씀 */
+main{
+    /* 가로축 정렬 display:flex 다음 justify-content 로 조정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px dashed brown;  */
+    height: 60vh; /*viewport height*/
+}
+/* class는 .씀 */
+.container{
+    /* button이 text처럼 취급 */
+    text-align: center;
+}
+.container h2{
+    color: white;
+    background-color: #000;
+    padding : 1rem;
+    /* 요소의 글꼴 크기를 1rem,기본 폰트 픽셀 16px */
+}
+.btn{
+    border: 2px dashed black;
+    /* 부모 속성을 전달 받음,(inherit) */
+    font-family: 'inherit';
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    /* 대문자로 바꾸기 */
+    text-transform: uppercase;
+    background-color: transparent;
+    /*둘다 가능  상하 0.5rem, 좌우 0.75rem */
+    /* 12시부터 시계방향 */
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    /* 상하,좌우 */
+    padding: 0.5rem 0.75rem;
+
+
+}

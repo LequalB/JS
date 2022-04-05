@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab01_dom.html</title>
+    <style>
+        .gold{
+            color:gold;
+        }
+        .display{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>메뉴</h1>
+        <div id="desc">설명</div>
+        <button id="check" class="nav"  name="checkName">조회</button>
+        <button id="tranfer" class="nav">이체</button>
+        <hr>
+        <input type="radio" name="gender" value="m">남
+        <input type="radio" name="gender" value="f">여
+        <select name="car" id="">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+
+        </select>
+        <div id = "hidden_desc"> 설명2 </div>
+
+        <script>
+            //DOM Element
+            //getElementById
+            const checkElement = document.getElementById('check');
+            console.log(checkElement);
+            console.log(checkElement.innerText);
+        
+            //getElementsByClassName
+            const navElements = document.getElementsByClassName('nav');
+            console.log(navElements);
+            console.log(navElements[0]);
+            for(let i =0; i < navElements.length; i++){
+                console.log(navElements[i]);
+            }
+            //getElementsByTagName
+            //let이 아니라 const->다른 요소의 접근, 충돌 방지
+            const h1Tags = document.getElementsByTagName('h1');
+            //console.log(h1Tags);//h1tag가 여러번 쓰일수도 있으므로 array 형태로 가져옴.
+            
+            //getElementsByName
+            const radioElements = document.getElementsByName('gender');
+            // console.log(radioElements);
+        
+            //DOM manipulation
+            const desc = document.getElementById('desc');
+            desc.innerText = '<strong> 수정된 설명2 </strong>';//tag를 단순한 text로 인식.
+            desc.innerHTML = '<strong> 수정된 설명 </strong>';//tag를 적용하여 표현.
+
+            desc.style.fontSize = '30px';
+
+            //class 생성후 바로 추가
+            const hrElement = document.createElement('hr');
+            desc.appendChild(hrElement);
+
+            desc.classList.add('gold');//class에 gold추가
+            desc.classList.remove('gold');//class의 gold제거
+            
+            const hidden_desc = document.getElementById('hidden_desc');
+            hidden_desc.classList.add('display');//class에 dispaly추가 (display:none수행)
+
+
+
+            
+        
+        </script>
+    </div>
+</body>
+</html>
